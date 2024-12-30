@@ -1,0 +1,201 @@
+/* Sidebar */
+.sidebar {
+  width: 150px; /* Giảm chiều rộng của sidebar */
+  position: fixed; /* Để sidebar luôn ở bên trái */
+  top: 100px; /* Gắn lên đầu */
+  left: 15px; /* Đảm bảo sidebar ở bên trái */
+  bottom: 100px;
+  background-color: navy; /* Màu nền sidebar là navy */
+  color: white; /* Màu chữ trắng */
+  padding: 20px; /* Khoảng cách bên trong sidebar */
+  z-index: 100; /* Đảm bảo sidebar không bị đè lên */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Đổ bóng cho sidebar */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: gray; /* Màu nền khi hover */
+}
+
+/* Nội dung chính */
+.admin-container {
+  padding: 20px;
+  background-color: #f4f4f9;
+  font-family: Arial, sans-serif;
+  margin-left: 220px; /* Đảm bảo có khoảng cách cho sidebar */
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+h2 {
+  color: #333;
+  margin-top: 30px;
+}
+
+/* Bảng đơn hàng và sản phẩm */
+.orders-table,
+.products-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng cho bảng */
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+}
+
+td {
+  background-color: #f9f9f9;
+}
+
+/* Button */
+button {
+  padding: 8px 15px;
+  margin: 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.update-btn {
+  background-color: #28a745;
+}
+
+.update-btn:hover {
+  background-color: #218838;
+}
+
+/* Form thêm và sửa sản phẩm */
+.add-product-form,
+.update-product-form {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-product-form input,
+.update-product-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-product-form button,
+.update-product-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-product-form button:hover,
+.update-product-form button:hover {
+  background-color: #218838;
+}
+
+/* Media Query - Màn hình nhỏ */
+@media (max-width: 768px) {
+  .admin-container {
+      margin-left: 0; /* Khi màn hình nhỏ, không còn sidebar, bỏ margin */
+  }
+
+  .sidebar {
+      width: 120px; /* Giảm chiều rộng sidebar trên màn hình nhỏ */
+      padding: 10px; /* Giảm padding trong sidebar */
+  }
+
+  .sidebar li {
+      font-size: 12px; /* Giảm kích thước chữ cho các mục sidebar */
+  }
+
+  .orders-table, .products-table {
+      width: 100%;
+      font-size: 12px;
+      margin-top: 10px;
+  }
+
+  .add-product-form input,
+  .add-product-form button,
+  .update-product-form input,
+  .update-product-form button {
+      width: 100%;
+  }
+
+  .edit-product-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000; /* Đảm bảo form xuất hiện trên cùng */
+}
+
+.edit-product-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.edit-product-form button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-product-form button:hover {
+    background-color: #0056b3;
+}
+
+}

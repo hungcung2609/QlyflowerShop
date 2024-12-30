@@ -1,0 +1,79 @@
+.footer {
+    background-color: white;
+    color: #333;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .footer-info, .footer-links, .footer-social {
+    width: 30%;
+  }
+  
+  .footer-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-info p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  .footer-links h4, .footer-social h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-links ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; /* Cho phép các mục trong danh sách quấn xuống dòng */
+    gap: 10px; /* Khoảng cách giữa các phần tử */
+    align-items: flex-start; /* Căn các mục của danh sách lên lề trái */
+    justify-content: flex-start; /* Căn các mục sang bên trái */
+  }
+  
+  .footer-links li {
+    width: 45%; /* Đặt chiều rộng của mỗi mục là 45% để có 2 cột */
+    margin-bottom: 10px;
+  }
+  
+  .footer-social a {
+    color: #333; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer-links ul a {
+    color: #333 ; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover, .footer-social a:hover {
+    color: #f5b042;
+  }
+  
+  .footer-bottom {
+    background-color: white;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .footer-divider {
+    border: none;
+    border-top: 3px solid #008000; /* Màu xanh lá cây */
+    margin: 10px 0; /* Khoảng cách trên dưới */
+  }
+  
+  

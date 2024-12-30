@@ -1,0 +1,111 @@
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #ffffff; /* Màu nền trắng */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng shadow */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-logo img {
+    height: 50px;
+}
+
+.navbar-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-menu li {
+    position: relative; /* Để định vị dropdown */
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+    color: #006400; /* Màu xanh của DalatHasfarm */
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    display: none; /* Ẩn menu con theo mặc định */
+    position: absolute;
+    top: 100%; /* Hiển thị menu ngay dưới mục cha */
+    left: 0;
+    background-color: #ffffff;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    min-width: 150px;
+}
+
+.dropdown-menu li {
+    padding: 10px 20px; /* Tăng khoảng cách để dễ hover */
+    white-space: nowrap; /* Ngăn ngắt dòng */
+    cursor: pointer; /* Thêm con trỏ cho mục con */
+    background-color: transparent; /* Nền trong suốt ban đầu */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu li a {
+    text-decoration: none; /* Loại bỏ gạch chân */
+    display: block; /* Chiếm toàn bộ vùng li */
+    color: inherit; /* Kế thừa màu từ li */
+    width: 100%; /* Chiếm toàn bộ chiều rộng của li */
+    height: 100%; /* Chiếm toàn bộ chiều cao của li */
+    padding: 10px 20px; /* Đồng bộ khoảng cách với li */
+    box-sizing: border-box; /* Đảm bảo kích thước không bị tràn */
+}
+
+.dropdown-menu li a:hover {
+    color: #ffffff;
+    background-color: #006400; /* Màu nền khi hover */
+}
+
+/* Hiển thị menu con khi hover vào mục cha */
+.navbar-menu li:hover .dropdown-menu {
+    display: block;
+}
+
+/* Navbar Actions */
+.navbar-actions {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-cart img {
+    height: 24px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.navbar-login {
+    text-decoration: none;
+    font-size: 16px;
+    color: #006400;
+    font-weight: bold;
+    border: 1px solid #006400;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-login:hover {
+    background-color: #006400;
+    color: #ffffff;
+}

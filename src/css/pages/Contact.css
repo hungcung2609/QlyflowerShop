@@ -1,0 +1,36 @@
+.store-locator {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.search-bar {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #45a049;
+}
+
+.leaflet-container {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
